@@ -18,4 +18,4 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Banner Message", name: "bannermsg", widget: "string" }
-      - { label: "Should This Be Active?", name: "isActive", widget: "string" }
+      - { label: "Should This Be Active?", name: "isActive", widget: "boolean" }

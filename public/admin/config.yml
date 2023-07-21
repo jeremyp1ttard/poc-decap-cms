@@ -1,6 +1,14 @@
 backend:
   name: git-gateway
   branch: main
+  use_large_media_transforms_in_media_library: false
+  commit_messages:
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
+media_folder: "images/uploads"
 collections:
   - name: "message"
     label: "Banner Messages"

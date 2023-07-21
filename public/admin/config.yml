@@ -1,3 +1,13 @@
 backend:
   name: git-gateway
   branch: main
+collections:
+  - name: "message"
+    label: "Banner Messages"
+    folder: "_posts/messages"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Banner Message", name: "bannermsg", widget: "string" }
+      - { label: "Should This Be Active?", name: "isActive", widget: "string" }
